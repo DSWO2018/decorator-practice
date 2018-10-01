@@ -1,5 +1,7 @@
 package mx.iteso;
 
-public abstract class User {
+public interface User {
+
+    void createUser(String userType);
 
 }
