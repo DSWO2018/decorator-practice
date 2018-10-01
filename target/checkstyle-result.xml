@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
-<file name="/home/gabriel/Documents/Otoño 2018/Diseño/decorator-practice/src/main/java/mx/iteso/UsuarioBase.java">
+<file name="/home/gabriel/Documents/Otoño 2018/Diseño/decorator-practice/src/main/java/mx/iteso/complements/Admin.java">
+</file>
+<file name="/home/gabriel/Documents/Otoño 2018/Diseño/decorator-practice/src/main/java/mx/iteso/complements/Editor.java">
+</file>
+<file name="/home/gabriel/Documents/Otoño 2018/Diseño/decorator-practice/src/main/java/mx/iteso/complements/package-info.java">
+</file>
+<file name="/home/gabriel/Documents/Otoño 2018/Diseño/decorator-practice/src/main/java/mx/iteso/complements/Publisher.java">
+</file>
+<file name="/home/gabriel/Documents/Otoño 2018/Diseño/decorator-practice/src/main/java/mx/iteso/Usuarios.java">
 </file>
 </checkstyle>

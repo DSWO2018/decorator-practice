@@ -1,11 +1,11 @@
-package mx.iteso.Complements;
+package mx.iteso.complements;
 
 import mx.iteso.User;
 
 /**
- * Si el usuario es publisher tiene permiso para publicar.
+ * Si el usuario es publisher tiene permiso para hacer comentarios.
  */
-public class Publisher extends User {
+public class Editor extends User {
     /**
      * El usuario que vamos a complementar.
      */
@@ -15,7 +15,7 @@ public class Publisher extends User {
      * Metodo.
      * @param user El usuario que vamos a complementar
      */
-    public Publisher(final User user) {
+    public Editor(final User user) {
         this.usuario = user;
     }
 
@@ -24,7 +24,7 @@ public class Publisher extends User {
      * @return Si el usuario puede, o no, publicar
      */
     public final boolean publish() {
-        return true;
+        return usuario.publish();
     }
 
     /**
@@ -48,6 +48,6 @@ public class Publisher extends User {
      * @return Si el usuario puede, o no, comentar
      */
     public final boolean comment() {
-        return usuario.comment();
+        return true;
     }
 }

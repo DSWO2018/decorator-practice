@@ -1,4 +1,4 @@
-package mx.iteso.Complements;
+package mx.iteso.complements;
 
 import mx.iteso.User;
 

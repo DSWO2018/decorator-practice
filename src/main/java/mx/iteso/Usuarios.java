@@ -1,8 +1,8 @@
 package mx.iteso;
 
-import mx.iteso.Complements.Admin;
-import mx.iteso.Complements.Editor;
-import mx.iteso.Complements.Publisher;
+import mx.iteso.complements.Admin;
+import mx.iteso.complements.Editor;
+import mx.iteso.complements.Publisher;
 
 /**
  * Clase para testear permisos.
