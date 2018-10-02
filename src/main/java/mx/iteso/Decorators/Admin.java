@@ -2,40 +2,30 @@ package mx.iteso.Decorators;
 
 import mx.iteso.User;
 
-/**
- * Clase
- */
 public class Admin extends User {
 
-    /**
-     * Method.
-     * @return true if its able to publish
-     */
+    User user;
+
+    public Admin(User user){
+        this.user = user;
+    }
     public final boolean publish() {
-        return false;
+        return user.publish();
     }
 
-    /**
-     * Method.
-     * @return true if its able to comment
-     */
-    public final boolean comment() {
-        return false;
-    }
-
-    /**
-     * Method.
-     * @return true if its able to delete comments
-     */
     public final boolean delete() {
-        return false;
+        return true;
     }
 
-    /**
-     * Method.
-     * @return true if its able to approve comments
-     */
     public final boolean approve() {
-        return false;
+        return true;
+    }
+
+    public final boolean comment() {
+        return true;
+    }
+
+    public String getUserType() {
+        return "Admin";
     }
 }

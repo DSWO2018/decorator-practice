@@ -30,5 +30,10 @@ public abstract class User {
      */
     public abstract boolean approve();
 
+    public String usertype = "Basic user";
+    public String getUserType(){
+        return usertype;
+    }
+
 
 }
