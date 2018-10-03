@@ -5,29 +5,63 @@ import mx.iteso.Post;
 import mx.iteso.PrivilegesDecorator;
 import mx.iteso.User;
 
+/**
+ * Admin class extends from PrivilegesDecorator.
+ */
 public class Admin extends PrivilegesDecorator {
-    User anyUser;
+    /**
+     * anyUser holds the default user.
+     */
+    private final User anyUser;
 
-    public Admin(User anyUser) {
-        this.anyUser = anyUser;
+    /**
+     * Admin constructor.
+     * @param user initializes the user into the class.
+     */
+    public Admin(final User user) {
+        anyUser = user;
     }
 
-    public Post publish(Blog blog, String post) {
+    /**
+     *
+     * @param blog where the post is going to be published
+     * @param post content
+     * @return a new Post object
+     */
+    public Post publish(final Blog blog, final String post) {
         return blog.newPost(post);
     }
 
-    public void approve(Post post) {
+    /**
+     *
+     * @param post object which has to be approved
+     */
+    public void approve(final Post post) {
         post.approve();
     }
 
-    public void delete(Blog blog, Post post) {
+    /**
+     *
+     * @param blog where the post is published
+     * @param post object which is going bo te deleted
+     */
+    public void delete(final Blog blog, final Post post) {
         blog.removePost(post);
     }
 
-    public void comment(Post post, String comment) {
+    /**
+     *
+     * @param post where the comment is going to be published
+     * @param comment content
+     */
+    public void comment(final Post post, final String comment) {
         post.comment(comment);
     }
 
+    /**
+     *
+     * @return the role
+     */
     public String role() {
         return "Admin";
     }

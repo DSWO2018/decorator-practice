@@ -4,8 +4,22 @@ import mx.iteso.priviliges.Admin;
 import mx.iteso.priviliges.Editor;
 import mx.iteso.priviliges.Publisher;
 
-public class Site {
-    public static void main(String[] args) {
+/**
+ * Site class. Example implementation.
+ */
+public final class Site {
+
+    /**
+     * Private constructor.
+     */
+    private Site() {
+
+    }
+
+    /**
+     * @param args for test purposes.
+     */
+    public static void main(final String[] args) {
         User anyAdmin = new AnyUser("Admin");
         User anyEditor = new AnyUser("Editor");
         User anyUser = new AnyUser("User");
@@ -18,23 +32,23 @@ public class Site {
         Blog adminBlog = new Blog(admin);
 
         adminPost = editor.publish(adminBlog, "Prueba del Editor");
-        if(adminPost==null) {
+        if (adminPost == null) {
             System.out.println("No tiene permisos.");
         }
 
         adminPost = user.publish(adminBlog, "Prueba del usuario");
-        if(adminPost==null) {
+        if (adminPost == null) {
             System.out.println("No tiene permisos.");
         }
 
         adminPost = admin.publish(adminBlog, "Prueba del admin");
-        if(adminPost==null) {
+        if (adminPost == null) {
             System.out.println("No tiene permisos.");
         }
 
         user.approve(adminPost);
 
-        if(adminPost.isApproved()) {
+        if (adminPost != null && adminPost.isApproved()) {
             System.out.println("Post aprobado");
         } else {
             System.out.println("Post pendiente de aprobacion");
@@ -42,7 +56,7 @@ public class Site {
 
         admin.approve(adminPost);
 
-        if(adminPost.isApproved()) {
+        if (adminPost != null && adminPost.isApproved()) {
             System.out.println("Post aprobado");
         } else {
             System.out.println("Post pendiente de aprobacion");

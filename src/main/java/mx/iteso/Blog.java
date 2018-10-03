@@ -2,27 +2,54 @@ package mx.iteso;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
+/**
+ * Blog class.
+ */
 
 public class Blog {
+    /**
+     * User object holds the owner.
+     */
     private User owner;
+
+    /**
+     *
+     */
     private List<Post> postList;
 
-    public Blog(User owner) {
-        this.owner = owner;
+    /**
+     *
+     * @param anyOwner object who owns the blog
+     */
+    Blog(final User anyOwner) {
+        owner = anyOwner;
         this.postList = new ArrayList<Post>();
     }
 
-    public Post newPost(String body) {
+    /**
+     *
+     * @param body content
+     * @return post object
+     */
+    public Post newPost(final String body) {
         Post anyPost = new Post(body);
         postList.add(anyPost);
         return anyPost;
     }
 
-    public void removePost(Post post) {
+    /**
+     *
+     * @param post object.
+     */
+    public void removePost(final Post post) {
         postList.remove(post);
     }
 
+    /**
+     *
+     * @return User object
+     */
     public User getOwner() {
         return this.owner;
     }

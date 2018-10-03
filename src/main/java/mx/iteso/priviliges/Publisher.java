@@ -5,32 +5,67 @@ import mx.iteso.Post;
 import mx.iteso.PrivilegesDecorator;
 import mx.iteso.User;
 
-public class Publisher extends PrivilegesDecorator {
-    User anyUser;
 
-    public Publisher(User anyUser) {
-        this.anyUser = anyUser;
+/**
+ * Publisher class extends from PrivilegesDecorator.
+ */
+public class Publisher extends PrivilegesDecorator {
+    /**
+     * anyUser holds the default user.
+     */
+    private final User anyUser;
+
+    /**
+     * Publisher constructor.
+     * @param user initializes the user into the class.
+     */
+    public Publisher(final User user) {
+        anyUser = user;
     }
 
-    public Post publish(Blog blog, String post) {
-        if(blog.getOwner().equals(this)) {
+    /**
+     *
+     * @param blog where the post is going to be published
+     * @param post content
+     * @return a new Post object
+     */
+    public Post publish(final Blog blog, final String post) {
+        if (blog.getOwner().equals(this)) {
             return blog.newPost(post);
         }
         return null;
     }
 
-    public void approve(Post post) {
-        return;
+    /**
+     *
+     * @param post object which has to be approved
+     */
+    public void approve(final Post post) {
+
     }
 
-    public void delete(Blog blog, Post post) {
-        return;
+    /**
+     *
+     * @param blog where the post is published
+     * @param post object which is going bo te deleted
+     */
+    public void delete(final Blog blog, final Post post) {
+
     }
 
-    public void comment(Post post, String comment) {
+    /**
+     *
+     * @param post where the comment is going to be published
+     * @param comment content
+     */
+    public void comment(final Post post, final String comment) {
         post.comment(comment);
     }
 
+    /**
+     *
+     * @return the role
+     */
     public String role() {
         return "Publisher";
     }

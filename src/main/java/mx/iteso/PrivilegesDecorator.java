@@ -1,4 +1,9 @@
 package mx.iteso;
 
-public abstract class PrivilegesDecorator extends User{
+/**
+ * PrivilegesDecorator class extends User.
+ */
+
+public abstract class PrivilegesDecorator extends User {
+
 }
