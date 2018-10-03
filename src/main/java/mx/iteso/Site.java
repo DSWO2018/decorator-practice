@@ -1,8 +1,8 @@
 package mx.iteso;
 
-import mx.iteso.priviliges.Admin;
-import mx.iteso.priviliges.Editor;
-import mx.iteso.priviliges.Publisher;
+import mx.iteso.privileges.Admin;
+import mx.iteso.privileges.Editor;
+import mx.iteso.privileges.Publisher;
 
 /**
  * Site class. Example implementation.
@@ -68,8 +68,10 @@ public final class Site {
 
         user.comment(adminPost, "Tercero");
 
-        for (String s : adminPost.getComments()) {
-           System.out.println(s);
+        if (adminPost != null) {
+            for (String s : adminPost.getComments()) {
+               System.out.println(s);
+            }
         }
 
     }

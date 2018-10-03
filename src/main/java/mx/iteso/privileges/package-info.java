@@ -1,4 +1,4 @@
 /**
  * Privileges package decorator.
  */
-package mx.iteso.priviliges;
+package mx.iteso.privileges;

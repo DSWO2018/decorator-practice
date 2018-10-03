@@ -1,4 +1,4 @@
-package mx.iteso.priviliges;
+package mx.iteso.privileges;
 
 import mx.iteso.Blog;
 import mx.iteso.Post;
@@ -6,19 +6,19 @@ import mx.iteso.PrivilegesDecorator;
 import mx.iteso.User;
 
 /**
- * Admin class extends from PrivilegesDecorator.
+ * Editor class extends from PrivilegesDecorator.
  */
-public class Admin extends PrivilegesDecorator {
+public class Editor extends PrivilegesDecorator {
     /**
      * anyUser holds the default user.
      */
     private final User anyUser;
 
     /**
-     * Admin constructor.
+     * Editor constructor.
      * @param user initializes the user into the class.
      */
-    public Admin(final User user) {
+    public Editor(final User user) {
         anyUser = user;
     }
 
@@ -29,7 +29,10 @@ public class Admin extends PrivilegesDecorator {
      * @return a new Post object
      */
     public Post publish(final Blog blog, final String post) {
-        return blog.newPost(post);
+        if (blog.getOwner().equals(this)) {
+            return blog.newPost(post);
+        }
+        return null;
     }
 
     /**
@@ -63,6 +66,6 @@ public class Admin extends PrivilegesDecorator {
      * @return the role
      */
     public String role() {
-        return "Admin";
+        return "Editor";
     }
 }

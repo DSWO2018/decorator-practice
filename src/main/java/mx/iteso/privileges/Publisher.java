@@ -1,24 +1,25 @@
-package mx.iteso.priviliges;
+package mx.iteso.privileges;
 
 import mx.iteso.Blog;
 import mx.iteso.Post;
 import mx.iteso.PrivilegesDecorator;
 import mx.iteso.User;
 
+
 /**
- * Editor class extends from PrivilegesDecorator.
+ * Publisher class extends from PrivilegesDecorator.
  */
-public class Editor extends PrivilegesDecorator {
+public class Publisher extends PrivilegesDecorator {
     /**
      * anyUser holds the default user.
      */
     private final User anyUser;
 
     /**
-     * Editor constructor.
+     * Publisher constructor.
      * @param user initializes the user into the class.
      */
-    public Editor(final User user) {
+    public Publisher(final User user) {
         anyUser = user;
     }
 
@@ -40,7 +41,7 @@ public class Editor extends PrivilegesDecorator {
      * @param post object which has to be approved
      */
     public void approve(final Post post) {
-        post.approve();
+
     }
 
     /**
@@ -49,7 +50,7 @@ public class Editor extends PrivilegesDecorator {
      * @param post object which is going bo te deleted
      */
     public void delete(final Blog blog, final Post post) {
-        blog.removePost(post);
+
     }
 
     /**
@@ -66,6 +67,6 @@ public class Editor extends PrivilegesDecorator {
      * @return the role
      */
     public String role() {
-        return "Editor";
+        return "Publisher";
     }
 }
