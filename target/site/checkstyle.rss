@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 6,
-             Errors: 68,
+      <title>File: 7,
+             Errors: 34,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,35 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.Approve.java">mx/iteso/Approve.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.java">mx/iteso/User.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  48
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.Comment.java">mx/iteso/Comment.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.ext.privileges.Approve.java">mx/iteso/User/ext/privileges/Approve.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.Publisher.java">mx/iteso/Publisher.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.ext.privileges.Delete.java">mx/iteso/User/ext/privileges/Delete.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.Privileges.java">mx/iteso/Privileges.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.ext.Privileges.java">mx/iteso/User/ext/Privileges.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +88,49 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.Delete.java">mx/iteso/Delete.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.ext.Publisher.java">mx/iteso/User/ext/Publisher.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.User.java">mx/iteso/User/User.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.ext.privileges.Comment.java">mx/iteso/User/ext/privileges/Comment.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#mx.iteso.User.MyUsers.java">mx/iteso/User/MyUsers.java</a>
                 </td>
                 <td>
                   0

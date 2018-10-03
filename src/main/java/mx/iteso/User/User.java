@@ -1,63 +1,139 @@
+/**
+ * Paquete de User.
+ *
+ * @author Luis Fernando Palafox.
+ * @version 1.1
+ * @since 1.0
+ */
 package mx.iteso.User;
 
+/**
+ * Clase base de usuarios.
+ */
 public abstract class User {
-
+    /**
+     * Variable para.
+     */
     private boolean publish = false;
+    /**
+     * Variable para.
+     */
     private boolean approve = false;
+    /**
+     * Variable para.
+     */
     private boolean delete = false;
+    /**
+     * Variable para.
+     */
     private boolean comment = false;
+    /**
+     * Variable para.
+     */
     private String publishContent = "";
 
+    /**
+     * Se retorna el tipo de calibración.
+     */
+    public abstract void setPrivilegs();
 
-    public abstract void setPrivilegs( );
-
-    public boolean isPublish() {
+    /**
+     * Se retorna el tipo de calibración.
+     *
+     * @return retorna la calibracion.
+     */
+    public final boolean isPublish() {
         return publish;
     }
 
-    public void setPublish(boolean publish) {
-        this.publish = publish;
-        if(publish){
+    /**
+     * Se da el tipo de calibración.
+     *
+     * @param publishV da el tipo a calibrar.
+     */
+    public final void setPublish(final boolean publishV) {
+        this.publish = publishV;
+        if (publish) {
             setPublishContent("everyone");
-        }else {
+        } else {
             setPublishContent("own");
         }
     }
 
-    public boolean isApprove() {
+    /**
+     * Se retorna el tipo de calibración.
+     *
+     * @return retorna la calibracion.
+     */
+    public final boolean isApprove() {
         return approve;
     }
 
-    public void setApprove(boolean approve) {
-        this.approve = approve;
+    /**
+     * Se da el tipo de calibración.
+     *
+     * @param approveV da el tipo a calibrar.
+     */
+    public final void setApprove(final boolean approveV) {
+        this.approve = approveV;
     }
 
-    public boolean isDelete() {
+    /**
+     * Se retorna el tipo de calibración.
+     *
+     * @return retorna la calibracion.
+     */
+    public final boolean isDelete() {
         return delete;
     }
 
-    public void setDelete(boolean delete) {
-        this.delete = delete;
+    /**
+     * Se da el tipo de calibración.
+     *
+     * @param deleteV da el tipo a calibrar.
+     */
+    public final void setDelete(final boolean deleteV) {
+        this.delete = deleteV;
     }
 
-    public boolean isComment() {
+    /**
+     * Se retorna el tipo de calibración.
+     *
+     * @return retorna la calibracion.
+     */
+    public final boolean isComment() {
         return comment;
     }
 
-    public void setComment(boolean comment) {
-        this.comment = comment;
+    /**
+     * Se da el tipo de calibración.
+     *
+     * @param commentV da el tipo a calibrar.
+     */
+    public final void setComment(final boolean commentV) {
+        this.comment = commentV;
     }
 
-    public String getPublishContent() {
+    /**
+     * Se retorna el tipo de calibración.
+     *
+     * @return retorna la calibracion.
+     */
+    public final String getPublishContent() {
         return publishContent;
     }
 
-    private void setPublishContent(String publishContent) {
-        this.publishContent = publishContent;
+    /**
+     * Se da el tipo de calibración.
+     *
+     * @param publishContentV da el tipo a calibrar.
+     */
+    private final void setPublishContent(final String publishContentV) {
+        this.publishContent = publishContentV;
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
 
         return "User{" +
                 " publish='" + getPublishContent() + '\'' +
