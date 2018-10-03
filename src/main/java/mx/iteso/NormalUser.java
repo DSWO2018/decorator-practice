@@ -1,11 +1,10 @@
 package mx.iteso;
 
-import java.net.ServerSocket;
-
-public class NormalUser implements User{
+/**Clase base para cada tipo de usuario.*/
+public class NormalUser implements User {
 
     @Override
-    public void createUser(String userType) {
+    public final void createUser(final String userType) {
         System.out.println("Creating a new " + userType);
     }
 

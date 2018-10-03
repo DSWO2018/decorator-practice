@@ -1,15 +1,25 @@
 package mx.iteso;
 
-public class PrivilegeDecorator implements User{
+/**Clase decoradora.*/
+public abstract class PrivilegeDecorator implements User {
 
-    protected User user;
+    /**Creacion de un usuario.*/
+    private User user;
 
-    public PrivilegeDecorator(User newUser){
+    /**constructor.
+     * @param newUser
+     * nuevo usuario.*/
+    public PrivilegeDecorator(final User newUser) {
         this.user = newUser;
     }
 
-    @Override
-    public void createUser(String userType) {
-        this.user.createUser(userType);
+    /**simple metodo getty.
+     * @return user
+     * */
+    public final User getUser() {
+        return this.user;
     }
+
+    @Override
+    public void createUser(final String userType) { }
 }
