@@ -1,7 +1,9 @@
-package mx.iteso;
+package mx.iteso.User.ext;
+
+import mx.iteso.User.User;
 
 /**
- * Created by Palaf on 01/10/2018.
+ * Created by Palaf on 03/10/2018.
  */
 public abstract class Privileges extends User {
     private User user;
@@ -15,5 +17,5 @@ public abstract class Privileges extends User {
     }
 
     @Override
-    public abstract void setPrivilegs();
+    public abstract void setPrivilegs() ;
 }

@@ -1,4 +1,4 @@
-package mx.iteso;
+package mx.iteso.User;
 
 public abstract class User {
 
@@ -59,12 +59,11 @@ public abstract class User {
     @Override
     public String toString() {
 
-
         return "User{" +
+                " publish='" + getPublishContent() + '\'' +
                 ", approve=" + isApprove() +
                 ", delete=" + isDelete() +
                 ", comment=" + isComment() +
-                ", publishContent='" + getPublishContent() + '\'' +
                 '}';
     }
 }

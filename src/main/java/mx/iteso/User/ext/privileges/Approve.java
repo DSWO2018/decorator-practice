@@ -1,4 +1,7 @@
-package mx.iteso;
+package mx.iteso.User.ext.privileges;
+
+import mx.iteso.User.User;
+import mx.iteso.User.ext.Privileges;
 
 /**
  * Created by Palaf on 01/10/2018.
