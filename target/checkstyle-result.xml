@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
 <file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\ext\privileges\Approve.java">
-<error line="19" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="19" column="20" severity="error" message="El parámetro user debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="24" column="5" severity="error" message="El método &apos;setPrivilegs&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-</file>
-<file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\ext\privileges\Comment.java">
-<error line="18" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="18" column="20" severity="error" message="El parámetro user debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="23" column="5" severity="error" message="El método &apos;setPrivilegs&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
 </file>
 <file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\ext\privileges\Delete.java">
-<error line="19" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="19" column="19" severity="error" message="El parámetro user debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="24" column="5" severity="error" message="El método &apos;setPrivilegs&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-</file>
-<file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\ext\Privileges.java">
-<error line="16" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="18" column="5" severity="error" message="El método &apos;getUser&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="18" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="22" column="5" severity="error" message="El método &apos;setUser&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="22" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="22" column="25" severity="error" message="El parámetro user debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="22" column="30" severity="error" message="&apos;user&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-</file>
-<file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\ext\Publisher.java">
-<error line="15" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="19" column="5" severity="error" message="El método &apos;setPrivilegs&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="31" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="33" column="9" severity="error" message="El método &apos;getUser&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="33" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="37" column="9" severity="error" message="El método &apos;setUser&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="37" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="37" column="29" severity="error" message="El parámetro user debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="37" column="34" severity="error" message="&apos;user&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-</file>
-<file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\MyUsers.java">
-<error line="13" column="1" severity="error" message="Clases de servicios públicos no deben tener un constructor público o por defecto." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
-<error line="14" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="14" column="29" severity="error" message="El parámetro args debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-</file>
-<file name="C:\Users\Palaf\Documents\Fernando\7s\decorator-practice\src\main\java\mx\iteso\User\User.java">
-<error line="131" column="13" severity="error" message="Modificador &apos;final&apos; redundante." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="138" column="24" severity="error" message="&apos;+&apos; debería estar en una línea nueva." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="139" column="59" severity="error" message="&apos;+&apos; debería estar en una línea nueva." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="140" column="44" severity="error" message="&apos;+&apos; debería estar en una línea nueva." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="141" column="42" severity="error" message="&apos;+&apos; debería estar en una línea nueva." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="142" column="44" severity="error" message="&apos;+&apos; debería estar en una línea nueva." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
 </file>
 </checkstyle>

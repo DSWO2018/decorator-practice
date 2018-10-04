@@ -12,28 +12,28 @@ package mx.iteso.User;
  */
 public abstract class User {
     /**
-     * Variable para.
+     * Variable para publish.
      */
     private boolean publish = false;
     /**
-     * Variable para.
+     * Variable para approve.
      */
     private boolean approve = false;
     /**
-     * Variable para.
+     * Variable para delete.
      */
     private boolean delete = false;
     /**
-     * Variable para.
+     * Variable para comment.
      */
     private boolean comment = false;
     /**
-     * Variable para.
+     * Variable para publishContent type.
      */
     private String publishContent = "";
 
     /**
-     * Se retorna el tipo de calibración.
+     * Se modifican los tipo de privilegios.
      */
     public abstract void setPrivilegs();
 
@@ -49,7 +49,7 @@ public abstract class User {
     /**
      * Se da el tipo de calibración.
      *
-     * @param publishV da el tipo a calibrar.
+     * @param publishV da el tipo a publish type.
      */
     public final void setPublish(final boolean publishV) {
         this.publish = publishV;
@@ -61,54 +61,54 @@ public abstract class User {
     }
 
     /**
-     * Se retorna el tipo de calibración.
+     * Se retorna el tipo de approve.
      *
-     * @return retorna la calibracion.
+     * @return retorna la approve.
      */
     public final boolean isApprove() {
         return approve;
     }
 
     /**
-     * Se da el tipo de calibración.
+     * Se da el tipo de approve.
      *
-     * @param approveV da el tipo a calibrar.
+     * @param approveV da el tipo a approve.
      */
     public final void setApprove(final boolean approveV) {
         this.approve = approveV;
     }
 
     /**
-     * Se retorna el tipo de calibración.
+     * Se retorna el tipo de delete.
      *
-     * @return retorna la calibracion.
+     * @return retorna la delete.
      */
     public final boolean isDelete() {
         return delete;
     }
 
     /**
-     * Se da el tipo de calibración.
+     * Se da el tipo de delete.
      *
-     * @param deleteV da el tipo a calibrar.
+     * @param deleteV da el tipo a delete.
      */
     public final void setDelete(final boolean deleteV) {
         this.delete = deleteV;
     }
 
     /**
-     * Se retorna el tipo de calibración.
+     * Se retorna el tipo de commet.
      *
-     * @return retorna la calibracion.
+     * @return retorna la commet.
      */
     public final boolean isComment() {
         return comment;
     }
 
     /**
-     * Se da el tipo de calibración.
+     * Se da el tipo de comment.
      *
-     * @param commentV da el tipo a calibrar.
+     * @param commentV da el tipo a commet.
      */
     public final void setComment(final boolean commentV) {
         this.comment = commentV;
@@ -128,18 +128,20 @@ public abstract class User {
      *
      * @param publishContentV da el tipo a calibrar.
      */
-    private final void setPublishContent(final String publishContentV) {
+    private void setPublishContent(final String publishContentV) {
         this.publishContent = publishContentV;
     }
 
     @Override
     public final String toString() {
 
-        return "User{" +
-                " publish='" + getPublishContent() + '\'' +
-                ", approve=" + isApprove() +
-                ", delete=" + isDelete() +
-                ", comment=" + isComment() +
-                '}';
+        return "User{"
+                + " publish='"
+                + getPublishContent() + '\''
+                + ", approve="
+                + isApprove()
+                + ", delete=" + isDelete()
+                + ", comment=" + isComment()
+                + '}';
     }
 }

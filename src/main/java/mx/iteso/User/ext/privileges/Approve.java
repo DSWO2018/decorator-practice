@@ -15,14 +15,21 @@ import mx.iteso.User.ext.Privileges;
  */
 public class Approve extends Privileges {
 
-
-    public Approve(User user) {
+    /**
+     * Constructor de Appove.
+     *
+     * @param user usario a guardar.
+     */
+    public Approve(final User user) {
         setUser(user);
         setPrivilegs();
     }
 
+    /**
+     * Se modifican los tipo de privilegios.
+     */
     @Override
-    public void setPrivilegs() {
+    public final void setPrivilegs() {
         setPublish(getUser().isPublish());
         setApprove(true);
         setDelete(getUser().isDelete());
