@@ -1,29 +1,48 @@
 package mx.iteso;
 
+/**
+ * clase publisher.
+ */
 public class Publisher extends User {
 
-    private User Usuario;
+    /**
+     * User usuario.
+     */
+    private User usuario;
 
-
-    public Publisher(User user) {
-        this.Usuario = user;
+    /**
+     * constructor de publisher.
+     * @param user     */
+    public Publisher(final User user) {
+        this.usuario = user;
     }
 
-
-    public boolean publishing() {
+    /**
+     * boolean publsh.
+     * @return     */
+    public final boolean publishing() {
         return true;
     }
-    public boolean deleting() {
-        return Usuario.deleting();
+
+    /**
+     * boolean deleting.
+     * @return     */
+    public final boolean deleting() {
+        return usuario.deleting();
     }
 
-
-    public boolean approving() {
-        return Usuario.approving();
+    /**
+     * boolean approve.
+     * @return     */
+    public final boolean approving() {
+        return usuario.approving();
     }
 
-
-    public boolean commenting() {
-        return Usuario.commenting();
+    /**
+     * boolean comment.
+     * @return     */
+    public final boolean commenting() {
+        return usuario.commenting();
     }
 }
+

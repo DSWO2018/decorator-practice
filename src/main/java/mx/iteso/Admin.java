@@ -1,28 +1,50 @@
+
 package mx.iteso;
+//package info.java;
 
+/**
+ * clase admin.
+ *
+ */
 public class Admin extends User {
+    /**
+     * Usuario.
+     */
+    private User usuario;
 
-    private User Usuario;
-
-    public Admin(User user) {
-        this.Usuario = user;
+    /**
+     * Admin.
+     * @param user     */
+    public Admin(final User user) {
+        this.usuario = user;
     }
- 
-    public boolean publishing() {
-        return Usuario.publishing();
+
+    /**
+     *boolean publishing.
+     * @return     */
+    public final boolean publishing() {
+        return usuario.publishing();
     }
 
-
-    public boolean deleting() {
+    /**
+     * boolean delete.
+     * @return     */
+    public final boolean deleting() {
         return true;
     }
 
-
-    public boolean approving() {
+    /**
+     * booleab approve.
+     * @return     */
+    public final boolean approving() {
         return true;
     }
 
-    public boolean commenting() {
-        return Usuario.commenting();
+    /**
+     * boolean comentar.
+     * @return     */
+    public final boolean commenting() {
+        return usuario.commenting();
     }
 }
+
