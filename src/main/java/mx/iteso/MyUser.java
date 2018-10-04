@@ -3,8 +3,17 @@ package mx.iteso;
 import mx.iteso.userType.Admin;
 import mx.iteso.userType.Editor;
 
-public class MyUser {
-    public static void main(String []args){
+/**
+ * Class for main.
+ */
+final class MyUser {
+    /**Constructor. */
+    private MyUser() {
+    }
+    /**
+     * @param args .
+     */
+    public static void main(final String[] args) {
         User usuario = new Publisher();
         System.out.println(usuario.getDescription() + " Privilegios: ");
         System.out.println(usuario.approve());

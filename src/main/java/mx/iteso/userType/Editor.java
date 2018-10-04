@@ -1,32 +1,54 @@
 package mx.iteso.userType;
 
-import mx.iteso.Publisher;
 import mx.iteso.User;
 
+/**
+ * Editor class.
+ */
 public class Editor extends UserType {
-    User user;
 
-    public Editor(User user) {
-        this.user = user;
+    /** User type var.*/
+   private User user;
+
+    /**
+     * @param usuario .
+     */
+    public Editor(final User usuario) {
+        this.user = usuario;
     }
 
-    public String getDescription() {
+    /**
+     * @return .
+     */
+    public final String getDescription() {
         return "Editor";
     }
 
-    public String publish() {
+    /**
+     * @return .
+     */
+    public final String publish() {
         return user.publish();
     }
 
-    public String approve() {
+    /**
+     * @return .
+     */
+    public final String approve() {
         return "Approve: YES";
     }
 
-    public String delete() {
+    /**
+     * @return .
+     */
+    public final String delete() {
         return user.delete();
     }
 
-    public String comment() {
+    /**
+     * @return .
+     */
+    public final String comment() {
         return user.comment();
     }
 

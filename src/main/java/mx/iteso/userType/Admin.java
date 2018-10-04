@@ -2,28 +2,48 @@ package mx.iteso.userType;
 
 import mx.iteso.User;
 
+/**
+ *  Admin class.
+ */
 public class Admin extends UserType {
-    User user;
+    /**User type var. */
+    private User user;
 
-    public Admin(User user){
-        this.user = user;
+    /**
+     * @param usuario .
+     */
+    public Admin(final User usuario) {
+        this.user = usuario;
     }
-    public String getDescription() {
+
+    /**
+     * @return .
+     */
+    public final String getDescription() {
         return "Admin";
     }
-    public String publish() {
+    /**
+     * @return .
+     */
+    public final String publish() {
         return user.publish() + " and everyone";
     }
-
-    public String approve() {
+    /**
+     * @return .
+     */
+    public final String approve() {
         return "Approve: YES";
     }
-
-    public String delete() {
+    /**
+     * @return .
+     */
+    public final String delete() {
         return "Delete : YES";
     }
-
-    public String comment() {
+    /**
+     * @return .
+     */
+    public final String comment() {
         return user.comment();
     }
 
